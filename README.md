@@ -1,9 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kOqwghv0)
 # ML Project — [Название проекта]
 
-**Студент:** [ФИО / Student ID]
+**Студент:** Цой Михаил
 
-**Группа:** [Группа]
+**Группа:** БИВ235
 
 
 ## Оглавление
@@ -20,11 +20,11 @@
 
 <!-- Кратко опишите задачу: что предсказываем, какой датасет, метрика качества -->
 
-**Задача:** [Классификация / Регрессия / Кластеризация / ...]
+**Задача:** Классификация
 
-**Датасет:** [Название и источник датасета]
+**Датасет:** Бинарная классификация с использованием табличного набора данных пульсаров. Источник: https://www.kaggle.com/competitions/playground-series-s3e10/overview/#site-content
 
-**Целевая метрика:** [Accuracy / F1 / RMSE / ...]
+**Целевая метрика:** LogLoss 
 
 
 ## Структура репозитория
@@ -57,13 +57,13 @@
 Этот блок замените способом запуска вашего сервиса.
 ```bash
 # 1. Клонировать репозиторий
-git clone <url>
-cd <repo-name>
+git clone https://github.com/hsemlcourse/hseml-group-project-stetmish.git
+cd hseml-group-project-stetmish
 
 # 2. Создать виртуальное окружение
 python -m venv .venv
-source .venv/bin/activate   # Linux/macOS
-# .venv\Scripts\activate    # Windows
+# source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate    # Windows
 
 # 3. Установить зависимости
 pip install -r requirements.txt
