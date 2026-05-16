@@ -85,6 +85,7 @@ pip install -r requirements.txt
 | Logistic Regression  | 0.406711  | 0.810761  | 0.102190  | 0.061947  | 0.291667 |
 
 Лучшая модель: Linear SVM
+
 Linear SVM показывает наименьший LogLoss при высоком ROC‑AUC, что делает его лучшей базовой моделью для данной задачи.
 
 ## Отчёт
