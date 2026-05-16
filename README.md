@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kOqwghv0)
-# ML Project — [Название проекта]
+# ML Project — Прогнозирование класса пульсара по статистическим характеристикам сигнала
 
-**Студент:** Цой Михаил
+**Студент:** Цой Михаил -
 
 **Группа:** БИВ235
 
@@ -36,9 +36,8 @@
 │   └── raw                     # Исходные файлы
 ├── models                      # Сохранённые модели 
 ├── notebooks
-│   ├── 01_eda.ipynb            # EDA
-│   ├── 02_baseline.ipynb       # Baseline-модель
-│   └── 03_experiments.ipynb    # Эксперименты и ablation study
+│   ├── Data_processing_and_preparation.ipynb
+│   └── Modeling_and_Experiments.ipynb
 ├── presentation                # Презентация для защиты
 ├── report
 │   ├── images                  # Изображения для отчёта
@@ -75,12 +74,17 @@ pip install -r requirements.txt
 
 
 ## Результаты
-Здесь коротко выпишите результаты.
-| Модель | [Метрика 1] | [Метрика 2] | Примечание |
-|--------|-------------|-------------|------------|
-| Baseline | — | — | |
-| Лучшая модель | — | — | |
+Сравнение baseline-моделей
 
+| Модель               | LogLoss   | ROC‑AUC   | F1        | Precision | Recall   |
+|----------------------|-----------|-----------|-----------|-----------|----------|
+| Linear SVM           | 0.009925  | 0.806066  | 0.100000  | 0.062500  | 0.250000 |
+| Gaussian NB          | 0.033321  | 0.780907  | 0.052632  | 0.033333  | 0.125000 |
+| KNN (k=5)            | 0.048682  | 0.559479  | 0.048387  | 0.030000  | 0.125000 |
+| Decision Tree        | 0.087322  | 0.499533  | 0.002977  | 0.001491  | 1.000000 |
+| Logistic Regression  | 0.406711  | 0.810761  | 0.102190  | 0.061947  | 0.291667 |
+Лучшая модель: Linear SVM
+Linear SVM показывает наименьший LogLoss при высоком ROC‑AUC, что делает его лучшей базовой моделью для данной задачи.
 
 ## Отчёт
 
